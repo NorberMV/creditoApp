@@ -11,7 +11,7 @@ Es una aplicación web basada en el framework para aplicaciones web de Python, D
 * [Tecnologias](#tecnologias)
 * [Setup](#setup)
 * [Uso](#uso)
-* [Imagenes](#Imagenes)
+
 
 # Tecnologias
 
@@ -86,12 +86,16 @@ y desde 'Bancos' crear los bancos correspondientes.
 
 >> Luego ir a la url http://127.0.0.1:8000/crear-clientes/  , la cual nos permite crear y registrar información de clientes.
 
+<img src="https://github.com/NorberMV/darien_test/blob/master/fotos/crear.png" width="600">
+
 >> Podemos luefo ir a la url http://127.0.0.1:8000/lista-clientes/ , la cual nos permite listar los clientes existentes en la base de datos.
+
+<img src="https://github.com/NorberMV/darien_test/blob/master/fotos/lista.png" width="600">
 
 >> Ubicados en esta vista  podemos dar clic en el nombre de cada cliente, para actualizar y adicionar más información.
 
-# Imagenes
+<img src="https://github.com/NorberMV/darien_test/blob/master/fotos/actualizar.png" width="600">
 
-<img src="https://github.com/NorberMV/darien_test/blob/master/fotos/admin.png" width="600">
+
 
 Author: Norberto Moreno | 2020
