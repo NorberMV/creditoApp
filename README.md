@@ -9,7 +9,7 @@ Es una aplicación web basada en el framework para aplicaciones web de Python, D
 * [Uso](#uso)
 * [Imagenes](#Imagenes)
 
-# Technologias
+# Tecnologias
 Project is created with:
 * An ESP32 module.
 * Echo Dot(3rd generation)
