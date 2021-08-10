@@ -1,6 +1,8 @@
 # Tu crédito Web App 
 Es una aplicación web basada en el framework para aplicaciones web de Python, Django que permite crear, listar y actualizar información de los usuarios del sistema. Tiene integrada una base de datos en PostgresQL administrada por AWS RDS.
 
+### Diagrama Modelo Base de Datos del Sistema
+
 <img src="https://github.com/NorberMV/darien_test/blob/master/modelo_BaseDatos.png" width="400">
 
 
@@ -24,7 +26,7 @@ El proyecto emplea los siguientes módulos de Python:
 
 ## Setup
 
-Clonar el repositorio de GiHub.
+>> Clonar el repositorio de GiHub.
 
 ```python
 # To run locally
@@ -35,7 +37,7 @@ pip install -r requirements.txt
 
 ```
 
- Configurar las variables de entorno en el SO adjuntas en el archivo secrets.txt
+>> Configurar las variables de entorno en el SO adjuntas en el archivo secrets.txt
  para la configuración del endpoint de Postgres en AWS.
 
 ```python
@@ -44,7 +46,7 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
-Crear un superusuario para acceder como administrador
+>> Crear un superusuario para acceder como administrador
 
 ```python
 # Ejecutar las migraciones a la Base de datos PostgresQL
@@ -57,7 +59,7 @@ python manage.py createsuperuser
 python manage.py createsuperuser
 # Crear usuario y contraseña
 ```
-Correr el servidor de desarrollo
+>> Correr el servidor de desarrollo
 
 ```python
 
@@ -76,13 +78,14 @@ Quit the server with CONTROL-C.
 
 ## Uso
 
-Ir al panel de administración http://127.0.0.1:8000/admin
+>> Ir al panel de administración http://127.0.0.1:8000/admin
 y desde 'Bancos' crear los bancos correspondientes.
 
-Luego ir a la url http://127.0.0.1:8000/crear-clientes/  , la cual nos permite crear y registrar información de clientes.
-Podemos luefo ir a la url http://127.0.0.1:8000/lista-clientes/ , la cual nos permite listar los clientes existentes en la base de datos.
+>> Luego ir a la url http://127.0.0.1:8000/crear-clientes/  , la cual nos permite crear y registrar información de clientes.
 
-Ubicados en esta vista  podemos dar clic en el nombre de cada cliente, para actualizar y adicionar más información.
+>> Podemos luefo ir a la url http://127.0.0.1:8000/lista-clientes/ , la cual nos permite listar los clientes existentes en la base de datos.
+
+>> Ubicados en esta vista  podemos dar clic en el nombre de cada cliente, para actualizar y adicionar más información.
 
 # Imagenes
 
