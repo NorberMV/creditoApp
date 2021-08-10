@@ -1,7 +1,7 @@
 # Tu crédito Web App 
 Es una aplicación web basada en el framework para aplicaciones web de Python, Django que permite crear, listar y actualizar información de los usuarios del sistema. Tiene integrada una base de datos en PostgresQL administrada por AWS RDS.
 
-<img src="https://github.com/NorberMV/darien_test/blob/master/modelo_BaseDatos.png" width="600">
+<img src="https://github.com/NorberMV/darien_test/blob/master/modelo_BaseDatos.png" width="300">
 
 
 ## Contenido
