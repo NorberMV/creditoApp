@@ -1,6 +1,8 @@
 # Tu crédito Web App 
 Es una aplicación web basada en el framework para aplicaciones web de Python, Django que permite crear, listar y actualizar información de los usuarios del sistema. Tiene integrada una base de datos en PostgresQL administrada por AWS RDS.
 
+<img src="https://github.com/NorberMV/darien_test/blob/master/modelo_BaseDatos.png" width="600">
+
 
 ## Contenido
 * [Tu crédito Web App](#Tu-crédito-Web-App)
@@ -10,11 +12,14 @@ Es una aplicación web basada en el framework para aplicaciones web de Python, D
 * [Imagenes](#Imagenes)
 
 # Tecnologias
-Project is created with:
-* An ESP32 module.
-* Echo Dot(3rd generation)
-* Node-Red service
-* Raspberry Pi 4.
+
+El proyecto emplea los siguientes módulos de Python:
+
+* Django==3.2.6
+* Pillow==8.3.1
+* psycopg2-binary==2.9.1
+* pytz==2021.1
+* sqlparse==0.4.1
 
 
 ## Setup
