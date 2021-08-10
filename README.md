@@ -81,6 +81,9 @@ Quit the server with CONTROL-C.
 >> Ir al panel de administración http://127.0.0.1:8000/admin
 y desde 'Bancos' crear los bancos correspondientes.
 
+<img src="https://github.com/NorberMV/darien_test/blob/master/fotos/admin.png" width="600">
+
+
 >> Luego ir a la url http://127.0.0.1:8000/crear-clientes/  , la cual nos permite crear y registrar información de clientes.
 
 >> Podemos luefo ir a la url http://127.0.0.1:8000/lista-clientes/ , la cual nos permite listar los clientes existentes en la base de datos.
@@ -89,6 +92,6 @@ y desde 'Bancos' crear los bancos correspondientes.
 
 # Imagenes
 
-<img src="https://github.com/NorberMV/DjangoBlogLive/blob/master/repo_pics/picBlog.gif" width="600">
+<img src="https://github.com/NorberMV/darien_test/blob/master/fotos/admin.png" width="600">
 
 Author: Norberto Moreno | 2020
