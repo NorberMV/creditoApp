@@ -1,0 +1,41 @@
+
+{% extends "clientes/base.html" %}
+
+{% block head_content %}
+    <title>Lista Clientes</title>
+{% endblock%}
+
+{% block container %}
+    <body>
+        <br> <!--Adds some space!--> 
+        <div><h1 style='text-align: center;'>Listado de Clientes</h1></div>
+        <br>
+        <div class="container">
+            <div class="row">
+                {% for cliente in clientes %}
+                <br>
+                <br>
+                <div>
+                    <div>
+                        <a href="{% url "clientes:detalle-clientes" cliente.id %}">
+                        <b><h4 style='text-align: center;'>{{ cliente.nombre_completo }}</h4></b></a>
+                    </div>
+                    <div>
+                        <b><p>Banco: </b>{{ cliente.banco }}</p>
+                    </div>
+                    </div>
+                    <div>
+                        <b><p>Creado: </b>{{ cliente.created }}</p>
+                    </div>
+                    <div>
+                        <b><p>Email: </b>{{ cliente.email }}</p>
+                    </div>
+                    
+                </div>
+                
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+{% endblock %}
+  

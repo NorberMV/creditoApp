@@ -1,0 +1,112 @@
+
+{% extends "clientes/base.html" %}
+{% load static %}
+
+{% block head_content %}
+<title>@{{ cliente.nombre }} | Actualizar cliente</title>
+{% endblock %}
+
+{% block container %}
+
+
+  <div><h1 style='text-align: center;'>Actualizar Cliente</h1></div>
+    <div class="row justify-content-md-center">
+        <div class="col-6 p-4" id="profile-box">
+
+            <form action="{% url "clientes:actualizar-clientes" %}" method="POST" enctype="multipart/form-data">
+            	{% csrf_token %}
+            	
+
+                {# name field #}
+
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input 
+                        class="form-control {% if form.nombre.errors %}is-invalid{% endif %}"  
+                        name="nombre" 
+                        placeholder="Nombre"
+                        value="{% if form.website.errors %}{{ form.nombre.value }}{% else %}{{ cliente.nombre}}{% endif %}" 
+                    />
+                    <div class="invalid-feedback">
+                        {% for error in form.nombre.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                {# Apellido field #}
+
+                <div class="form-group">
+                    <label>Apellido</label>
+                    <input 
+                        class="form-control {% if form.apellido.errors %}is-invalid{% endif %}"  
+                        name="apellido" 
+                        placeholder="Apellido"
+                        value="{% if form.apellido.errors %}{{ form.apellodo.value }}{% else %}{{ cliente.apellido}}{% endif %}" 
+                    />
+                    <div class="invalid-feedback">
+                        {% for error in form.apellido.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                {# Direccion field #}
+                <div class="form-group">
+                    <label>Direccion</label>
+                    <input
+                        class="form-control {% if form.direccion_habitacion.errors %}is-invalid{% endif %}"
+                        type="text"
+                        name="direccion_habitacion"
+                        placeholder="Direccion"
+                        value="{% if form.direccion_habitacion.errors %}{{ form.direccion_habitacion.value }}{% else %}{{ cliente.direccion_habitacion }}{% endif %}"
+                    />
+                    <div class="invalid-feedback">
+                        {% for error in form.direccion_habitacion.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                {# Edad field #}
+
+                <div class="form-group">
+                    <label>Edad</label>
+                    <input 
+                        class="form-control  {% if form.edad.errors %}is-invalid{% endif %}" 
+                        type=type="number"
+                        name="edad"
+                        value="{% if form.edad.errors %}{{ form.edad.value }}{% else %}{{ cliente.edad }}{% endif %}"
+                    />
+                    <div class="invalid-feedback">
+                        {% for error in form.edad.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                </div>
+
+
+                {# Phone number field #}
+
+                <div class="form-group">
+                    <label>Telefono</label>
+                    <input
+                        class="form-control {% if form.telefono.errors %}is-invalid{% endif %}"
+                        type="text"
+                        name="telefono"
+                        placeholder="Telefono"
+                        value="{% if form.telefono.errors %}{{ form.telefono.value }}{% else %}{{ cliente.telefono }}{% endif %}"
+                    />
+                    <div class="invalid-feedback">
+                        {% for error in form.telefono.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block mt-5">Actualizar</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
