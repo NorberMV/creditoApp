@@ -75,23 +75,23 @@ Quit the server with CONTROL-C.
 
 > Ir al panel de administración http://127.0.0.1:8000/admin/
 > Acceder con como administrador
-> Desde 'Bancos' crear los bancos correspondientes.
+> y desde 'Bancos' crear los bancos correspondientes.
 
 <img src="https://github.com/NorberMV/darien_test/blob/master/fotos/admin.png" width="600">
 
 
 
->> Luego ir a la url http://127.0.0.1:8000/crear-clientes/  , la cual nos permite crear y registrar información de clientes.
+> Luego ir a la url http://127.0.0.1:8000/crear-clientes/  , la cual nos permite crear y registrar información de clientes.
 
 <img src="https://github.com/NorberMV/darien_test/blob/master/fotos/crear.png" width="600">
 
 
->> Podemos luego dar clic en 'Listar Clientes' el cual nos llevará a la url http://127.0.0.1:8000/lista-clientes/ , una vez aquí podremos ver la lista de los  clientes existentes en la base de datos.
+> Podemos luego dar clic en 'Listar Clientes' el cual nos llevará a la url http://127.0.0.1:8000/lista-clientes/ , una vez aquí podremos ver la lista de los  clientes existentes en la base de datos.
 
 <img src="https://github.com/NorberMV/darien_test/blob/master/fotos/lista.png" width="600">
 
 
->> Podremos dar clic en el nombre del usuario deseado para actualizar su información ó eliminarlo de la base de datos.
+> Podremos dar clic en el nombre del usuario deseado para actualizar su información ó eliminarlo de la base de datos.
 
 <img src="https://github.com/NorberMV/darien_test/blob/master/fotos/crear_eliminar.png" width="600">
 
