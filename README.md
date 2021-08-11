@@ -73,9 +73,9 @@ Quit the server with CONTROL-C.
 
 ## Uso
 
->> Ir al panel de administración http://127.0.0.1:8000/admin/
->> Acceder con como administrador
->> Desde 'Bancos' crear los bancos correspondientes.
+> Ir al panel de administración http://127.0.0.1:8000/admin/
+> Acceder con como administrador
+> Desde 'Bancos' crear los bancos correspondientes.
 
 <img src="https://github.com/NorberMV/darien_test/blob/master/fotos/admin.png" width="600">
 
