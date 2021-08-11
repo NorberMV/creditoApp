@@ -3,7 +3,7 @@ Es una aplicación web basada en el framework para aplicaciones web de Python, D
 
 ### Diagrama Modelo Base de Datos del Sistema
 
-<img src="https://github.com/NorberMV/darien_test/blob/master/modelo_BaseDatos.png" width="600">
+<img src="https://github.com/NorberMV/darien_test/blob/master/modelo_BaseDatos.png" width="700">
 
 
 ## Contenido
