@@ -45,10 +45,8 @@ def crear_cliente(request):
 
 def detalle_cliente(request, **kwarg):                 
     
-    """ Vista información cliente; lleva
-        al template 'actualizar.html' para solicitud
-        de actualización y carga la
-        información del cliente específico."""
+    """ Vista información detalle cliente creado
+        exitosamente."""
 
     
     client_id = kwarg['client_id']               # Tomamos el valor kwarg del id del cliente tomado de la URL
@@ -122,6 +120,9 @@ class ListaClientes(ListView):
 
 
 def eliminar_cliente(request,**kwarg):
+
+    """ Vista de eliminación de usuario. """
+
     client_id = kwarg['client_id']
     cliente = Cliente.objects.get(id = client_id)
     
