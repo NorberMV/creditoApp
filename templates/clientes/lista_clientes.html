@@ -12,12 +12,13 @@
         <br>
         <div class="container">
             <div class="row">
+
                 {% for cliente in clientes %}
                 <br>
                 <br>
                 <div>
                     <div>
-                        <a href="{% url "clientes:detalle-clientes" cliente.id %}">
+                        <a href="{% url "clientes:actualizar-clientes" cliente.id %}">
                         <b><h4 style='text-align: center;'>{{ cliente.nombre_completo }}</h4></b></a>
                     </div>
                     <div>
@@ -25,12 +26,20 @@
                     </div>
                     </div>
                     <div>
-                        <b><p>Creado: </b>{{ cliente.created }}</p>
+                        <b><p>Creado: </b>{{ cliente.creado }}</p>
                     </div>
                     <div>
                         <b><p>Email: </b>{{ cliente.email }}</p>
                     </div>
-                    
+                    <div>
+                        <b><p>Edad: </b>{{ cliente.edad }}</p>
+                    </div>
+                    <div>
+                        <b><p>Direccion: </b>{{ cliente.direccion_habitacion }}</p>
+                    </div>
+                    <div>
+                        <b><p>Telefono: </b>{{ cliente.edad }}</p>
+                    </div>
                 </div>
                 
                 {% endfor %}

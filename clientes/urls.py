@@ -18,12 +18,6 @@ urlpatterns = [
         name='crear-clientes'
     ),
 
-    path( # ACTUALIZAR USUARIO                     # redirecciona a la información de un cliente en particulár
-        route='detalle-clientes/<int:client_id>/',
-        view=views.detalle_cliente,
-        name='detalle-clientes',
-    ),
-    
     path(                                          # Lista los clientes
         route='lista-clientes/',
         view=views.ListaClientes.as_view(),
@@ -31,9 +25,21 @@ urlpatterns = [
     ),
 
     path(                                         # Actualización de datos de cliente
-        route='actualizar-clientes/',
+        route='actualizar-clientes/<int:client_id>/',
         view=views.actualizar_cliente,
         name='actualizar-clientes',
     ),
+
+    path(
+        route='detalle-clientes/<int:client_id>/',
+        view=views.detalle_cliente,
+        name='detalle-clientes'
+    ),
+
+    path(
+        route='eliminar-clientes/<int:client_id>/',
+        view=views.eliminar_cliente,
+        name='eliminar-clientes'
+    )
 
 ]

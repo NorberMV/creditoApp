@@ -8,12 +8,15 @@
 
 {% block container %}
 
+{% if mensaje %} <p style='text-align: center;'>{{ mensaje }}</p>{% endif %}
 
-  <div><h1 style='text-align: center;'>Actualizar Cliente</h1></div>
+
+  <div><h2 style='text-align: center;'>Actualizar ó Eliminar Cliente</h2></div>
+  <p style='text-align: center;'>Esta vista permite actualizar o eliminar el cliente seleccionado en el Listado de clientes.</p>
     <div class="row justify-content-md-center">
-        <div class="col-6 p-4" id="profile-box">
+        <div class="col-8 p-4" >
 
-            <form action="{% url "clientes:actualizar-clientes" %}" method="POST" enctype="multipart/form-data">
+            <form action="{% url "clientes:actualizar-clientes" cliente.id %}" method="POST" enctype="multipart/form-data">
             	{% csrf_token %}
             	
 
@@ -104,8 +107,11 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-block mt-5">Actualizar</button>
+                <button type="submit" class="btn btn-primary btn-block mt-3">Actualizar</button>
             </form>
+            <a href="{% url "clientes:eliminar-clientes" cliente.id %}">
+                <button class="btn btn-primary btn-block mt-2">Eliminar</button>
+            </a>
         </div>
     </div>
 

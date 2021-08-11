@@ -29,7 +29,7 @@ class CreateForm(forms.Form):
     )
 
     # Validacion adicional sobreescribiendo clean_fieldName() Method
-    def clean_username(self): # Validacion de Email
+    def clean_email(self): # Validacion de Email
         """Email debe ser único."""
         email = self.cleaned_data['email']
         email_taken = Cliente.objects.filter(email=email).exists()
@@ -63,6 +63,7 @@ class ClientForm(forms.Form):
     
     edad = forms.CharField(min_length=2, max_length=50, required=False)
     direccion_habitacion = forms.CharField(max_length=30, required=False)
+    
     
 
     

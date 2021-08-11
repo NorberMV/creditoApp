@@ -5,6 +5,7 @@
 from django.contrib.auth.models import User
 from django.db import models
 
+
 # Modelos
 from bancos.models import Banco
 
@@ -31,6 +32,9 @@ class Cliente(models.Model):
     direccion_habitacion = models.CharField(max_length=200, blank=True)
     telefono = models.CharField(max_length=20, blank=True)
     tipo_persona = models.CharField(max_length=20, choices=TIPO_PERSONA, null=True)
+
+    creado = models.DateTimeField(auto_now_add=True, null=True)
+	
 
     """ Método para retornar nombre completo del Cliente
         para usarlo como propiedad de la clase Cliente. """
