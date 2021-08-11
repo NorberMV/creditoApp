@@ -3,7 +3,7 @@ Es una aplicación web basada en el framework para aplicaciones web de Python, D
 
 ### Diagrama Modelo Base de Datos del Sistema
 
-<img src="https://github.com/NorberMV/darien_test/blob/master/modelo_BaseDatos.png" width="400">
+<img src="https://github.com/NorberMV/darien_test/blob/master/modelo_BaseDatos.png" width="600">
 
 
 ## Contenido
@@ -93,7 +93,7 @@ Quit the server with CONTROL-C.
 
 >> Podremos dar clic en el nombre del usuario deseado para actualizar su información ó eliminarlo de la base de datos.
 
-<img src="https://github.com/NorberMV/darien_test/blob/master/fotos/actualizar.png" width="600">
+<img src="https://github.com/NorberMV/darien_test/blob/master/fotos/crear_eliminar.png" width="600">
 
 
 
