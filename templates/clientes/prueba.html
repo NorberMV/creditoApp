@@ -1,0 +1,15 @@
+
+{% extends "clientes/base.html" %}
+{% load static %}
+
+{% block head_content %}
+<title>@{{ cliente.nombre }} | Actualizar cliente</title>
+{% endblock %}
+
+{% block container %}
+
+    {% for cliente in clientes %}
+        <p>Hola <b>{{ cliente }}</b>, bienvenido a la Tu Credito App!</p>
+    {% endfor %}
+
+{% endblock %}

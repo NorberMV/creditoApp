@@ -40,6 +40,14 @@ urlpatterns = [
         route='eliminar-clientes/<int:client_id>/',
         view=views.eliminar_cliente,
         name='eliminar-clientes'
+    ),
+    # FUNCION DE PRUEBA
+    path(
+        route='prueba/',
+        view=views.prueba_function,
+        name='prueba'
     )
+
+
 
 ]

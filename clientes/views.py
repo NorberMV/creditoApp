@@ -131,3 +131,16 @@ def eliminar_cliente(request,**kwarg):
     url = reverse('clientes:lista-clientes') 
     
     return redirect(url)
+
+
+def prueba_function(request):
+    clientes = Cliente.objects.all()
+    
+    return render(
+        request=request,
+        template_name='clientes/prueba.html/',
+        context = {
+            'clientes':clientes,
+            #'mensaje': mensaje,
+        }
+    )
